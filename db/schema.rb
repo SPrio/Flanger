@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2021_03_06_123000) do
     t.string "condition"
     t.string "finish"
     t.string "title"
-    t.decimal "price"
+    t.decimal "price", precision: 5, scale: 2, default: "0.0"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "image"
