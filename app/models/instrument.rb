@@ -1,6 +1,5 @@
 class Instrument < ApplicationRecord
   mount_uploader :image, ImageUploader
-  serialize :image, JSON # If you use SQLite, add this line
   belongs_to :user, optional: true
 
   validates :title, :brand, :price, :model, presence: true

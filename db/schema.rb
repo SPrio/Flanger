@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 2021_03_06_123000) do
     t.decimal "price", precision: 5, scale: 2, default: "0.0"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "image"
+    t.json "image"
     t.integer "user_id"
   end
 
