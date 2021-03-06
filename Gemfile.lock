@@ -282,6 +282,7 @@ GEM
       method_source (>= 0.6.7)
 
 PLATFORMS
+  ruby
   x86_64-linux
 
 DEPENDENCIES
