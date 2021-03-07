@@ -3,7 +3,8 @@ module ApplicationHelper
     "<span class='tag is-dark'>#{@cart.line_items.count}</span>".html_safe if @cart.line_items.count.positive?
   end
 
-  def cart_has_items
-    @cart.line_items.count
+  def total_cart_items
+    total = @cart.line_items.map(&:quantity).sum
+    return total if total > 0
   end
 end
